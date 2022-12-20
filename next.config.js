@@ -11,7 +11,9 @@ module.exports = {
     loader: 'imgix',
     path: '/',
   },
+  reactStrictMode: true,
+  output: 'standalone',
   experimental: {
     outputStandalone: true,
-  },
+  }
 }
