@@ -10,8 +10,4 @@ module.exports = {
     loader: 'imgix',
     path: '/',
   },
-  experimental: {
-    outputStandalone: true,
-    outputFileTracingRoot: path.join(__dirname, '../../'),
-  },
 }
