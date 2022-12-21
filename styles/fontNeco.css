@@ -102,7 +102,9 @@
     font-family: 'Neco-MediumItalic';
     src: url('../public/fonts/neco/Neco-MediumItalic.woff2') format('woff2'),
          url('../public/fonts/neco/Neco-MediumItalic.woff') format('woff'),
-         url('../public/fonts/neco/Neco-MediumItalic.ttf') format('truetype');
+         url('../public/fonts/neco/Neco-MediumItalic.ttf') format('truetype'),
+         url('../public/fonts/neco/Neco-MediumItalic.eot') format('truetype'),
+         url('../public/fonts/neco/Neco-MediumItalic.otf') format('truetype');
          font-weight: 500;
          font-display: swap;
          font-style: italic;

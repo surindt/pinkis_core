@@ -2,6 +2,7 @@
 import { throws } from "assert";
 import React, { Component} from "react"; 
 import Logo from "./logo";
+//import SetBodyScroll from "./bodyScroll";
 
 
 class Navbar extends Component{
@@ -10,13 +11,15 @@ class Navbar extends Component{
         active: false
     };
 
-    toggleActive = () =>{
+    toggleActive = () => {
         if (this.state.active === false) {
             this.setState({active: true})
         }else {
             this.setState({active: false})
         }
+        //useSetBodyScroll(this.state.active);
     }
+
     /* 
     classToggle() {
         const {active} = this.state;
@@ -36,21 +39,7 @@ class Navbar extends Component{
         return active === false ? 'nav__active' : 'nav__not__active';
     };
 
-   /*  componentDidMount() {
-        const {active} = this.state;
-        if (active === false) {
-            this.setBodyClass('overflow__body__not__active');
-            
-        } else if (active === true) { 
-            this.setBodyClass('overflow__body__active');
-        } 
-    } */
-    setBodyClass(className) {
-        // remove other classes
-        document.body.className ='';
-        // assign new class
-        document.body.classList.add(className);
-    }
+
    
    
 
@@ -73,6 +62,7 @@ class Navbar extends Component{
     render(){
         return(
             <div>
+                
                 <div className="menu__hamb__sticky ">
                    
                     <div className={"nav__mobile__prin "+(this.props.goingUp)}>
@@ -94,16 +84,16 @@ class Navbar extends Component{
                     <ul className={"nav__f__"+(this.props.goingUp)}>
                         <li className="nav__item exception">
                             <ul className="nav__web">    
-                                <li className="nav__item nav__mobile">
+                                <li onClick={this.toggleActive} className="nav__item nav__mobile">
                                     <a href="#services" className="nav__link__web">SERVICIOS</a>
                                 </li>
-                                <li className="nav__item nav__mobile">
+                                <li onClick={this.toggleActive} className="nav__item nav__mobile">
                                     <a href="#aboutme" className="nav__link__web"> SOBRE MÍ</a>
                                 </li>
-                                <li className="nav__item nav__mobile">
+                                <li onClick={this.toggleActive} className="nav__item nav__mobile">
                                     <a href="#contact" className="nav__link__web">CONTACTO</a>
                                 </li>
-                                <li className="nav__item nav__mobile">
+                                <li onClick={this.toggleActive} className="nav__item nav__mobile">
                                     <a href="https://estilizatusideas.gumroad.com/" className="nav__link__web">SHOP</a>
                                 </li>
                             </ul>

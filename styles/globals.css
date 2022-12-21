@@ -129,4 +129,7 @@ a:hover{
     justify-content: flex-end;
     margin-bottom: -5px;
   }
+  a:hover{
+    color: #404040;
+  }
 }
