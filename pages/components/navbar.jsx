@@ -1,6 +1,7 @@
 
 import { throws } from "assert";
 import React, { Component} from "react"; 
+import Botton from "./bottonOverflow";
 import Logo from "./logo";
 //import SetBodyScroll from "./bodyScroll";
 
@@ -10,7 +11,7 @@ class Navbar extends Component{
     state = {
         active: false
     };
-
+    
     toggleActive = () => {
         if (this.state.active === false) {
             this.setState({active: true})
@@ -70,6 +71,7 @@ class Navbar extends Component{
                             <a href="#init" className="nav__link"> <Logo load={this.props.load} /> </a>
                         </div>
                         <div onClick={this.toggleActive} className="container__menu_three">
+                            <Botton active={this.state.active}/>
                             <div className={"three__lines__"+(this.props.load)}>
                                 <span></span>
                             </div>
@@ -106,6 +108,7 @@ class Navbar extends Component{
                                 </li>
                                 <li className="toogle__menu menu__onlymobile"> 
                                     <div onClick={this.toggleActive} className="container__hamb">
+                                        <Botton active={this.state.active}/>
                                     <div className="hamburger"><span></span></div></div>
                                 </li>
                             </ul>

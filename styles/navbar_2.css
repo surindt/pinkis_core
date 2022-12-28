@@ -32,9 +32,7 @@ ul {
 .spaceJustifyNav{
     flex-grow: 2;
 }
-.exception{
-    flex-grow: 2;
-}
+
 .menu__logo{
     flex-grow: 2;
 }
@@ -54,10 +52,23 @@ ul {
 .menu__onlymobile{
     display: none;
 }
+
 .nav__item, .nav__social{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.nav__item{
+    flex-grow: 1;
+    align-items: flex-start;
+}
+.item_social{
+    display: flex;
+    align-items: flex-end;
+}
+.menu__logo{
+    display: flex;
+    align-items: center;
 }
 .nav__link__web{
     padding-right: 20px;
@@ -232,7 +243,13 @@ ul {
     display: none;
   }
 
-  
+  .clickea{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 32px;
+   
+  }
 }
 
 .color{

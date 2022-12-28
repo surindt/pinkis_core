@@ -6,6 +6,7 @@ import Services from './components/services'
 import AboutMe from './components/about__me'
 import Footer from './components/footer__worktogether'
 import Head from 'next/head';
+import Navbar2 from './components/navbar_func';
 
 
 
@@ -75,7 +76,7 @@ export default function Home() {
       <link rel='icon' href="https://public-files.gumroad.com/variants/8tpq4yscoc3c4pm4nlypvaa9q2vx/5030a33736a33fff939ce6d9f843d748f92b33eecdff51020ac02c0e90bcdaad" type = "image/x-icon" /> public/images/SOBREMI/1.jpeg
       </Head>
       <div className="container__princ" onLoad={() => handleLoad} onScroll={() => handleScroll}>
-          <Navbar goingUp={goingUp} load ={loadBoolean} />
+          <Navbar2 goingUp={goingUp} load ={loadBoolean} />
           
           <div className="container__all"> 
               <div className="content" > 
