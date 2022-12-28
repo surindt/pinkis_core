@@ -32,7 +32,7 @@ const Navbar2 = (param) =>{
            
             <div className={"nav__mobile__prin "+(param.goingUp)}>
                 <div className="logo__item">
-                    <a href="/" className="nav__link"> <Logo load={param.load} /> </a>
+                    <a href="#init" onClick={toggleActive} className="nav__link"> <Logo load={param.load} /> </a>
                 </div>
                 <div onClick={toggleActive} className="container__menu_three">
                     
@@ -68,7 +68,7 @@ const Navbar2 = (param) =>{
                 <li className="nav__item menu__logo">
                     <ul className="logo__hamburger">
                         <li className="nav__item">
-                            <a href="/" className="nav__link"> <Logo load={param.load} /> </a>
+                            <a href="#init" onClick={toggleActive} className="nav__link"> <Logo load={param.load} /> </a>
                         </li>
                         <li className="toogle__menu menu__onlymobile"> 
                             <div onClick={toggleActive} className="container__hamb">
